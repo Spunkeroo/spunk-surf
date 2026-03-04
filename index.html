@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spunk.Surf — Surf the Web and Get Paid</title>
+<meta name="description" content="Curated link discovery. The best sites on the internet for making money, crypto, gaming, and AI tools — all free.">
+<meta name="keywords" content="surf web earn money, best websites 2026, crypto sites, make money online, discover best sites">
+<link rel="canonical" href="https://spunk.surf/">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏄</text></svg>">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0f;--card:#1a1a2e;--card2:#12121a;--purple:#bf5af2;--cyan:#00f5d4;--text:#f0f0f0;--muted:#a0a0b8;--border:#2a2a3e;--radius:12px}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.navbar{position:sticky;top:0;z-index:100;background:rgba(10,10,15,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 24px}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px}
+.nav-logo{font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:800;background:linear-gradient(135deg,#00f5d4,#bf5af2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero{padding:80px 24px 64px;text-align:center;background:linear-gradient(180deg,rgba(0,245,212,.06) 0%,transparent 100%)}
+.hero-inner{max-width:800px;margin:0 auto}
+.hero-badge{display:inline-block;background:rgba(0,245,212,.1);border:1px solid rgba(0,245,212,.3);border-radius:999px;padding:4px 16px;font-size:.8rem;font-weight:700;color:var(--cyan);margin-bottom:20px}
+.hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(2.2rem,6vw,3.8rem);font-weight:800;line-height:1.1;margin-bottom:16px}
+.grad{background:linear-gradient(135deg,#00f5d4,#bf5af2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{font-size:1.1rem;color:var(--muted);max-width:560px;margin:0 auto 32px}
+.cats{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:40px}
+.cat-chip{background:var(--card);border:1px solid var(--border);border-radius:999px;padding:8px 18px;font-size:.85rem;font-weight:700;cursor:pointer;transition:.2s}
+.cat-chip:hover,.cat-chip.active{border-color:var(--cyan);color:var(--cyan);background:rgba(0,245,212,.08)}
+.section{max-width:1100px;margin:0 auto;padding:48px 24px}
+.section-title{font-family:'Space Grotesk',sans-serif;font-size:1.6rem;font-weight:800;margin-bottom:8px}
+.section-sub{color:var(--muted);margin-bottom:32px;font-size:.95rem}
+.sites-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.site-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;transition:.2s;display:flex;flex-direction:column;gap:10px}
+.site-card:hover{border-color:var(--cyan);transform:translateY(-2px);box-shadow:0 4px 20px rgba(0,245,212,.1)}
+.site-header{display:flex;align-items:center;gap:12px}
+.site-icon{font-size:2rem;flex-shrink:0;width:48px;text-align:center}
+.site-name{font-weight:700;font-size:1rem}
+.site-tag{font-size:.72rem;color:var(--cyan);font-weight:700}
+.site-desc{color:var(--muted);font-size:.82rem;line-height:1.5;flex:1}
+.site-cta{display:inline-block;background:linear-gradient(135deg,#00f5d4,#bf5af2);color:#000;font-weight:700;padding:8px 16px;border-radius:8px;font-size:.8rem;align-self:flex-start}
+.aff-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.aff-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;display:flex;align-items:center;gap:16px;transition:.2s}
+.aff-card:hover{border-color:var(--purple);box-shadow:0 4px 20px rgba(191,90,242,.1)}
+.aff-card.featured{border-color:rgba(0,245,212,.3);background:rgba(0,245,212,.04)}
+.aff-icon{font-size:2rem;flex-shrink:0;width:48px;text-align:center}
+.aff-info strong{display:block;font-size:.95rem;margin-bottom:2px}
+.aff-info span{color:var(--muted);font-size:.8rem}
+.aff-cta{background:linear-gradient(135deg,#bf5af2,#7c3aed);color:#fff;border:none;padding:8px 16px;border-radius:8px;font-size:.8rem;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0}
+.empire-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px}
+.empire-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px;text-align:center;transition:.2s}
+.empire-card:hover{border-color:var(--cyan)}
+.empire-card .e-icon{font-size:1.4rem;margin-bottom:6px}
+.empire-card strong{display:block;font-size:.82rem;margin-bottom:2px}
+.empire-card span{color:var(--muted);font-size:.72rem}
+footer{background:var(--card2);border-top:1px solid var(--border);padding:40px 24px;text-align:center}
+.footer-logo{font-family:'Space Grotesk',sans-serif;font-size:1.2rem;font-weight:800;background:linear-gradient(135deg,#00f5d4,#bf5af2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px}
+.mobile-nav{display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(18,18,26,.96);backdrop-filter:blur(12px);border-top:1px solid var(--border);z-index:200}
+.mobile-nav-inner{display:flex;justify-content:space-around;padding:8px 0 max(8px,env(safe-area-inset-bottom))}
+.m-nav-item{display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--muted);font-size:.65rem;font-weight:600;padding:4px 12px;text-decoration:none}
+.m-nav-item.active{color:var(--cyan)}
+.m-nav-item span:first-child{font-size:1.2rem}
+@media(max-width:768px){.mobile-nav{display:block}.hero{padding:60px 16px 40px}.section{padding:32px 16px}.sites-grid{grid-template-columns:1fr}.aff-grid{grid-template-columns:1fr}.empire-grid{grid-template-columns:repeat(2,1fr)}body{padding-bottom:64px}}
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">spunk.surf</a>
+    <div style="display:flex;gap:20px">
+      <a href="#sites" style="color:var(--muted);font-size:.9rem;font-weight:600">Sites</a>
+      <a href="#earn" style="color:var(--muted);font-size:.9rem;font-weight:600">Earn</a>
+      <a href="#empire" style="color:var(--muted);font-size:.9rem;font-weight:600">Empire</a>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="hero-badge">🏄 1,000+ curated links — all free</span>
+    <h1>Surf the Web.<br><span class="grad">Get Paid.</span></h1>
+    <p>The best sites on the internet for making money, learning crypto, gaming, and AI tools. Curated and verified.</p>
+    <div class="cats">
+      <button class="cat-chip active" onclick="filterSites('all',this)">🌐 All</button>
+      <button class="cat-chip" onclick="filterSites('crypto',this)">🪙 Crypto</button>
+      <button class="cat-chip" onclick="filterSites('gaming',this)">🎮 Gaming</button>
+      <button class="cat-chip" onclick="filterSites('ai',this)">🤖 AI</button>
+      <button class="cat-chip" onclick="filterSites('earn',this)">💰 Earn</button>
+      <button class="cat-chip" onclick="filterSites('tools',this)">🛠️ Tools</button>
+    </div>
+  </div>
+</div>
+
+<section class="section" id="sites">
+  <div class="section-title">🔥 Top Sites Right Now</div>
+  <div class="section-sub">Handpicked. Always up-to-date. Click to surf.</div>
+  <div class="sites-grid" id="sites-grid">
+    <a href="https://spunk.bet" target="_blank" rel="noopener" class="site-card" data-cat="gaming">
+      <div class="site-header"><div class="site-icon">🎰</div><div><div class="site-name">Spunk.Bet</div><div class="site-tag">GAMING • FREE</div></div></div>
+      <p class="site-desc">Free Bitcoin casino. Claim 10,000 SPUNK runes daily. No deposit. No KYC. Play instantly.</p>
+      <span class="site-cta">Surf →</span>
+    </a>
+    <a href="https://pfp.best" target="_blank" rel="noopener" class="site-card" data-cat="ai">
+      <div class="site-header"><div class="site-icon">🎨</div><div><div class="site-name">PFP.Best</div><div class="site-tag">AI • ART</div></div></div>
+      <p class="site-desc">Upload your profile picture, get rated 1-10 by the community. Climb the leaderboard. Free.</p>
+      <span class="site-cta">Surf →</span>
+    </a>
+    <a href="https://predict.horse" target="_blank" rel="noopener" class="site-card" data-cat="earn">
+      <div class="site-header"><div class="site-icon">🐎</div><div><div class="site-name">Predict.Horse</div><div class="site-tag">EARN • PREDICTIONS</div></div></div>
+      <p class="site-desc">Predict horse race winners and crypto prices. Earn while you watch the races unfold.</p>
+      <span class="site-cta">Surf →</span>
+    </a>
+    <a href="https://scam.wiki" target="_blank" rel="noopener" class="site-card" data-cat="tools">
+      <div class="site-header"><div class="site-icon">🔍</div><div><div class="site-name">Scam.Wiki</div><div class="site-tag">TOOLS • SAFETY</div></div></div>
+      <p class="site-desc">Community-powered scam detection. Check any site, wallet, or project before you trust it.</p>
+      <span class="site-cta">Surf →</span>
+    </a>
+    <a href="https://spunk.work" target="_blank" rel="noopener" class="site-card" data-cat="tools">
+      <div class="site-header"><div class="site-icon">⚙️</div><div><div class="site-name">Spunk.Work</div><div class="site-tag">TOOLS • AUTOMATION</div></div></div>
+      <p class="site-desc">150+ business automation tools. Automate your email, social media, SEO, and everything else.</p>
+      <span class="site-cta">Surf →</span>
+    </a>
+    <a href="https://coinbase.com/join/YAGES3X?src=referral-link" target="_blank" rel="noopener sponsored" class="site-card" data-cat="crypto">
+      <div class="site-header"><div class="site-icon">🪙</div><div><div class="site-name">Coinbase</div><div class="site-tag">CRYPTO • $10 FREE</div></div></div>
+      <p class="site-desc">Buy Bitcoin, Ethereum, and Solana. Most trusted exchange. Get $10 free when you sign up.</p>
+      <span class="site-cta">Get $10 →</span>
+    </a>
+    <a href="https://winna.com/?r=Spunkeroo" target="_blank" rel="noopener sponsored" class="site-card" data-cat="earn">
+      <div class="site-header"><div class="site-icon">🏆</div><div><div class="site-name">Winna.com</div><div class="site-tag">EARN • FREE PRIZES</div></div></div>
+      <p class="site-desc">Free sweepstakes casino. Win real prizes, gift cards, and cash. No deposit. Legal everywhere.</p>
+      <span class="site-cta">Win →</span>
+    </a>
+    <a href="https://leonardo.ai/" target="_blank" rel="noopener sponsored" class="site-card" data-cat="ai">
+      <div class="site-header"><div class="site-icon">🎨</div><div><div class="site-name">Leonardo AI</div><div class="site-tag">AI • FREE TIER</div></div></div>
+      <p class="site-desc">Best AI image generator. Create stunning artwork, NFTs, and profile pictures in seconds. Free tier.</p>
+      <span class="site-cta">Create →</span>
+    </a>
+  </div>
+</section>
+
+<section class="section" id="earn">
+  <div class="section-title">💰 Surf Safe & Earn</div>
+  <div class="section-sub">The tools to protect yourself and profit while you surf</div>
+  <div class="aff-grid">
+    <a href="https://nordvpn.com/affiliate/" target="_blank" rel="noopener sponsored" class="aff-card featured">
+      <div class="aff-icon">🛡️</div><div class="aff-info"><strong>NordVPN — Surf Safely</strong><span>Hide your IP. Access any site. Essential for crypto users and privacy-conscious surfers.</span></div>
+      <button class="aff-cta">Protect →</button>
+    </a>
+    <a href="https://coinbase.com/join/YAGES3X?src=referral-link" target="_blank" rel="noopener sponsored" class="aff-card">
+      <div class="aff-icon">🪙</div><div class="aff-info"><strong>Coinbase — Earn Crypto</strong><span>Stack BTC and ETH while you surf. Get $10 free on signup.</span></div>
+      <button class="aff-cta">Earn →</button>
+    </a>
+    <a href="https://kalshi.com/sign-up/?referral=6b723b42-d0c9-4421-9b4e-5af4b4c6c42c" target="_blank" rel="noopener sponsored" class="aff-card">
+      <div class="aff-icon">📊</div><div class="aff-info"><strong>Kalshi — Predict Events</strong><span>Bet on anything that happens in the real world. CFTC-regulated prediction markets.</span></div>
+      <button class="aff-cta">Predict →</button>
+    </a>
+    <a href="https://stake.com/?c=MyXSehCn" target="_blank" rel="noopener sponsored" class="aff-card">
+      <div class="aff-icon">♠️</div><div class="aff-info"><strong>Stake.com — Play & Win</strong><span>World's #1 crypto casino. 3,000+ games. Surf over and play instantly.</span></div>
+      <button class="aff-cta">Play →</button>
+    </a>
+    <a href="https://winna.com/?r=Spunkeroo" target="_blank" rel="noopener sponsored" class="aff-card">
+      <div class="aff-icon">🏆</div><div class="aff-info"><strong>Winna — Win Real Prizes</strong><span>Free sweepstakes. Win cash and gift cards. No deposit ever needed.</span></div>
+      <button class="aff-cta">Win →</button>
+    </a>
+    <a href="https://affiliate.ledger.com/" target="_blank" rel="noopener sponsored" class="aff-card">
+      <div class="aff-icon">🔐</div><div class="aff-info"><strong>Ledger — Secure Your Crypto</strong><span>Keep your surfing profits safe offline. The #1 hardware wallet.</span></div>
+      <button class="aff-cta">Secure →</button>
+    </a>
+  </div>
+</section>
+
+<section class="section" id="empire">
+  <div class="section-title">🌐 SpunkArt Empire</div>
+  <div class="section-sub">All sites built by SPUNK LLC — @SpunkArt13</div>
+  <div class="empire-grid">
+    <a href="https://spunk.bet" target="_blank" rel="noopener" class="empire-card"><div class="e-icon">🎰</div><strong>Spunk.Bet</strong><span>Free casino</span></a>
+    <a href="https://pfp.best" target="_blank" rel="noopener" class="empire-card"><div class="e-icon">🎨</div><strong>PFP.Best</strong><span>Rate PFPs</span></a>
+    <a href="https://spunk.wiki" target="_blank" rel="noopener" class="empire-card"><div class="e-icon">📖</div><strong>Spunk.Wiki</strong><span>Crypto wiki</span></a>
+    <a href="https://spunk.casino" target="_blank" rel="noopener" class="empire-card"><div class="e-icon">🃏</div><strong>Spunk.Casino</strong><span>Casino guide</span></a>
+    <a href="https://spunk.work" target="_blank" rel="noopener" class="empire-card"><div class="e-icon">⚙️</div><strong>Spunk.Work</strong><span>Automate</span></a>
+    <a href="https://predict.horse" target="_blank" rel="noopener" class="empire-card"><div class="e-icon">🐎</div><strong>Predict.Horse</strong><span>Predictions</span></a>
+    <a href="https://scam.wiki" target="_blank" rel="noopener" class="empire-card"><div class="e-icon">🔍</div><strong>Scam.Wiki</strong><span>Safety</span></a>
+    <a href="https://i13.fun" target="_blank" rel="noopener" class="empire-card"><div class="e-icon">🎉</div><strong>i13.Fun</strong><span>Daily fun</span></a>
+    <a href="https://spunk.best" target="_blank" rel="noopener" class="empire-card"><div class="e-icon">⭐</div><strong>Spunk.Best</strong><span>Best picks</span></a>
+    <a href="https://spunk.my" target="_blank" rel="noopener" class="empire-card"><div class="e-icon">🧡</div><strong>Spunk.My</strong><span>Brand hub</span></a>
+    <a href="https://spunk.casa" target="_blank" rel="noopener" class="empire-card"><div class="e-icon">🏠</div><strong>Spunk.Casa</strong><span>Home office</span></a>
+    <a href="https://spunk.baby" target="_blank" rel="noopener" class="empire-card"><div class="e-icon">🍼</div><strong>Spunk.Baby</strong><span>Baby gear</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">spunk.surf</div>
+  <p style="color:var(--muted);font-size:.85rem;margin-bottom:16px">Surf the Web. Discover the Best. Get Paid. — SPUNK LLC — @SpunkArt13</p>
+  <button class="tip-spunk-btn" onclick="openTipModal()">🧡 Tip Spunk</button>
+  <p style="color:var(--muted);font-size:.75rem;margin-top:16px">© 2026 SPUNK LLC. Contains affiliate links.</p>
+</footer>
+<nav class="mobile-nav">
+  <div class="mobile-nav-inner">
+    <a href="#sites" class="m-nav-item active"><span>🏄</span>Surf</a>
+    <a href="#earn" class="m-nav-item"><span>💰</span>Earn</a>
+    <a href="https://spunk.bet" class="m-nav-item"><span>🎰</span>Play</a>
+    <a href="#empire" class="m-nav-item"><span>🌐</span>Empire</a>
+  </div>
+</nav>
+<style>
+.tip-spunk-btn{display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1.1rem;border:none;border-radius:999px;font-weight:800;font-size:.85rem;cursor:pointer;color:#fff;background:linear-gradient(135deg,#a855f7,#7c3aed,#c026d3);box-shadow:0 0 14px rgba(168,85,247,.6);transition:all .2s;animation:tipGlow 2s ease-in-out infinite}
+@keyframes tipGlow{0%,100%{box-shadow:0 0 14px rgba(168,85,247,.6)}50%{box-shadow:0 0 28px rgba(192,38,211,.85)}}
+.tip-overlay{display:none;position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,.78);backdrop-filter:blur(6px);justify-content:center;align-items:center}
+.tip-overlay.active{display:flex}
+.tip-box{background:#12121a;border:2px solid #7c3aed;border-radius:1.25rem;padding:2rem;max-width:400px;width:90%;text-align:center}
+.tip-addr{background:#0a0a0f;border:1px solid #7c3aed;border-radius:.5rem;padding:.75rem;font-family:monospace;font-size:.7rem;word-break:break-all;color:#c084fc;cursor:pointer;margin-bottom:.75rem}
+.tip-close{width:100%;padding:.6rem;background:#1a1a2e;border:1px solid #2a2a3e;color:#f0f0f0;border-radius:10px;font-size:.88rem;cursor:pointer;font-family:inherit}
+.vtr-badge{position:fixed;bottom:76px;left:12px;z-index:9997;display:flex;align-items:center;gap:6px;background:rgba(0,0,0,.72);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:5px 12px 5px 8px;font-size:.72rem;font-weight:700;color:#fff;pointer-events:none}
+.vtr-dot{width:7px;height:7px;border-radius:50%;background:#22c55e;flex-shrink:0;animation:vtrP 2s ease-in-out infinite}
+@keyframes vtrP{0%,100%{box-shadow:0 0 0 0 rgba(34,197,94,.5)}60%{box-shadow:0 0 0 5px rgba(34,197,94,0)}}
+</style>
+<div class="tip-overlay" id="tip-modal" onclick="if(event.target===this)closeTip()">
+  <div class="tip-box">
+    <h3 style="color:#c084fc;margin-bottom:.5rem">🧡 Tip Spunk</h3>
+    <p style="color:#a0a0b8;font-size:.88rem;margin-bottom:1rem">Built by one person. Every tip helps build the next free site.</p>
+    <div class="tip-addr" onclick="navigator.clipboard.writeText('bc1pkepg42ctsvsxk499qu02qqyyz88gwjchnjpsu22wmng9rhpfv3jqw2t2hm').then(()=>{this.textContent='✓ Copied!';setTimeout(()=>this.textContent='bc1pkepg42ctsvsxk499qu02qqyyz88gwjchnjpsu22wmng9rhpfv3jqw2t2hm',2000)})">bc1pkepg42ctsvsxk499qu02qqyyz88gwjchnjpsu22wmng9rhpfv3jqw2t2hm</div>
+    <p style="font-size:.72rem;color:#6b6b80;margin-bottom:1rem">Click to copy • Bitcoin (BTC)</p>
+    <button class="tip-close" onclick="closeTip()">Close</button>
+  </div>
+</div>
+<div class="vtr-badge" id="vtr-badge"><span class="vtr-dot"></span><span id="vtr-count">...</span></div>
+<script>
+window.openTipModal=function(){document.getElementById('tip-modal').classList.add('active')};
+window.closeTip=function(){document.getElementById('tip-modal').classList.remove('active')};
+function filterSites(cat,btn){
+  document.querySelectorAll('.cat-chip').forEach(c=>c.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.site-card').forEach(c=>{
+    c.style.display=(cat==='all'||c.dataset.cat===cat)?'':'none';
+  });
+}
+(function(){if(window._vtrInit)return;window._vtrInit=true;var DB='https://predict-network-ec767-default-rtdb.firebaseio.com';var site=(location.hostname||'local').replace(/\./g,'_').replace(/[#$\[\]]/g,'_');var sid='s'+Math.random().toString(36).slice(2)+Date.now().toString(36);var sRef=DB+'/vtr/'+site+'/s/'+sid+'.json';var allRef=DB+'/vtr/'+site+'/s.json';function ping(){fetch(sRef,{method:'PUT',body:JSON.stringify({t:Date.now()}),headers:{'Content-Type':'application/json'}}).catch(function(){})}function refresh(){fetch(allRef).then(r=>r.json()).then(d=>{var n=1;if(d&&typeof d==='object'){n=Math.max(1,Object.values(d).filter(v=>v&&v.t&&(Date.now()-v.t)<25000).length);}var el=document.getElementById('vtr-count');if(el)el.textContent=n+(n===1?' visitor':' visitors')+' online';}).catch(()=>{})}var day=new Date().toISOString().slice(0,10);fetch(DB+'/vtr/'+site+'/hits/'+day+'.json').then(r=>r.json()).then(n=>{fetch(DB+'/vtr/'+site+'/hits/'+day+'.json',{method:'PUT',body:JSON.stringify((n||0)+1),headers:{'Content-Type':'application/json'}}).catch(()=>{})}).catch(()=>{});window.addEventListener('pagehide',()=>fetch(sRef,{method:'DELETE',keepalive:true}).catch(()=>{}));ping();refresh();setInterval(()=>{ping();refresh();},10000);})();
+</script>
+</body>
+</html>
