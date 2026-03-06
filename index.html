@@ -367,5 +367,6 @@ function filterSites(cat,btn){
 }
 (function(){if(window._vtrInit)return;window._vtrInit=true;var DB='https://predict-network-ec767-default-rtdb.firebaseio.com';var site=(location.hostname||'local').replace(/\./g,'_').replace(/[#$\[\]]/g,'_');var sid='s'+Math.random().toString(36).slice(2)+Date.now().toString(36);var sRef=DB+'/vtr/'+site+'/s/'+sid+'.json';var allRef=DB+'/vtr/'+site+'/s.json';function ping(){fetch(sRef,{method:'PUT',body:JSON.stringify({t:Date.now()}),headers:{'Content-Type':'application/json'}}).catch(function(){})}function refresh(){fetch(allRef).then(r=>r.json()).then(d=>{var n=1;if(d&&typeof d==='object'){n=Math.max(1,Object.values(d).filter(v=>v&&v.t&&(Date.now()-v.t)<25000).length);}var el=document.getElementById('vtr-count');if(el)el.textContent=n+(n===1?' visitor':' visitors')+' online';}).catch(()=>{})}var day=new Date().toISOString().slice(0,10);fetch(DB+'/vtr/'+site+'/hits/'+day+'.json').then(r=>r.json()).then(n=>{fetch(DB+'/vtr/'+site+'/hits/'+day+'.json',{method:'PUT',body:JSON.stringify((n||0)+1),headers:{'Content-Type':'application/json'}}).catch(()=>{})}).catch(()=>{});window.addEventListener('pagehide',()=>fetch(sRef,{method:'DELETE',keepalive:true}).catch(()=>{}));ping();refresh();setInterval(()=>{ping();refresh();},10000);})();
 </script>
+<script src="https://spunk.codes/spunk-ads.js" defer></script>
 </body>
 </html>
